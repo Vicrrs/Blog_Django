@@ -1,12 +1,12 @@
+# docker-compose.yml
 version: '3.9'
 
 services:
   djangoapp:
     container_name: djangoapp
-    build:
-      context: .
+    build: .
     ports:
-      - 8000:8000
+      - "8000:8000"
     volumes:
       - ./djangoapp:/djangoapp
       - ./data/web/static:/data/web/static/
